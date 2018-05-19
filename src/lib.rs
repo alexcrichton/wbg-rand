@@ -6,10 +6,28 @@
 //! periodically from `Math.random`.
 //!
 //! Users of `rand::thread_rng` should feel right at home with `wasm_rng`.
+//!
+//! # Example Usages
+//! See the Rng trait for more examples: https://docs.rs/rand/0.5.0-pre.2/rand/trait.Rng.html.
+//!
+//! ```no_run
+//! use wbg_rand::{Rng, wasm_rng, math_random_rng};
+//!
+//! // get random boolean, `math_random_rng()` samples `Math.random` in JS every call
+//! let a: bool = math_random_rng().gen();
+//! println!("{}", a);
+//!
+//! // `wasm_rng()` only samples `Math.random` to re-seed periodically
+//! let n = wasm_rng().gen::<f64>();
+//! println!("{}", n);
+//!
+//! let r: usize = wasm_rng().gen_range(0, 10);
+//! println!("{}", r);
+//! ```
 
 #![feature(proc_macro, wasm_custom_section, wasm_import_module)]
-extern crate wasm_bindgen;
 extern crate rand;
+extern crate wasm_bindgen;
 #[macro_use]
 extern crate lazy_static;
 
