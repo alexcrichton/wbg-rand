@@ -18,13 +18,13 @@ Next add the following to your crate:
 ```rust
 extern crate wbg_rand;
 
-use wbg_rand::{Rng, wasm_rand};
+use wbg_rand::{Rng, wasm_rng};
 ```
 
 The `rand` crate is reexported from the `wbg-rand` crate so the `Rng` trait here
 is the [same as it is upstream](https://docs.rs/rand/0.4.2/rand/trait.Rng.html).
 
-And now you use `wasm_rand` just like you would `thread_rng`!
+And now you use `wasm_rng` just like you would `thread_rng`!
 
 # License
 
