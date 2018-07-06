@@ -13,5 +13,5 @@ Random numbers and and RNG for wasm32-unknown-unknown using `#[wasm_bindgen]`
 
 [dependencies]
 wasm-bindgen = "0.2"
-rand = "0.4"
+rand = "0.5"
 lazy_static = "1.0"
