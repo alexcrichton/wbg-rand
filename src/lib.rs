@@ -25,7 +25,8 @@
 //! println!("{}", r);
 //! ```
 
-#![feature(proc_macro, use_extern_macros)]
+#![feature(use_extern_macros)]
+
 extern crate rand;
 extern crate wasm_bindgen;
 #[macro_use]
