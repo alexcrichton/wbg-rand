@@ -25,10 +25,6 @@
 //! println!("{}", r);
 //! ```
 
-#![feature(use_extern_macros)]
-
-extern crate rand;
-extern crate wasm_bindgen;
 #[macro_use]
 extern crate lazy_static;
 

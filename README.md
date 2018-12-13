@@ -16,7 +16,7 @@ wbg-rand = "0.4"
 Next add the following to your crate:
 
 ```rust
-extern crate wbg_rand;
+extern crate wbg_rand;  // if pre-Rust 2018
 
 use wbg_rand::{Rng, wasm_rng};
 ```
