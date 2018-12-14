@@ -1,4 +1,7 @@
-# wbg-rand
+# wbg-rand [DEPRECATED]
+
+This crate is no longer necessary! `rand` 0.6 on [crates.io](https://crates.io/crates/rand)
+has native `wasm-bindgen` support. Use that instead!
 
 Implementation of `rand` for wasm32-unknown-unknown in Rust using
 `#[wasm_bindgen]`.
